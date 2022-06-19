@@ -3,19 +3,17 @@ import 'package:flutter/material.dart';
 import 'contact.dart';
 import 'new_contact.dart';
 
-void main() => runApp(
-      MaterialApp(
-        title: 'Material App',
-        home: const HomePage(),
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(primarySwatch: Colors.deepOrange),
-        routes: {
-          '/new-contact': (context) => const NewContactView(),
-        },
-      ),
-    );
-
-//! Home Page !\\
+// *! runApp(
+final aa = MaterialApp(
+  title: 'Material App',
+  home: const HomePage(),
+  debugShowCheckedModeBanner: false,
+  theme: ThemeData(primarySwatch: Colors.deepOrange),
+  routes: {
+    '/new-contact': (context) => const NewContactView(),
+  },
+);
+// ! )
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
