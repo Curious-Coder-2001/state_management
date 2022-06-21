@@ -1,3 +1,5 @@
+// ignore_for_file: library_prefixes
+
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'dart:developer' as devTools show log;
@@ -72,7 +74,7 @@ class AvailableColorsWidget extends InheritedModel<AvailableColors> {
   final Color color1;
   final Color color2;
 
-  AvailableColorsWidget({
+  const AvailableColorsWidget({
     Key? key,
     required this.color1,
     required this.color2,
@@ -99,7 +101,7 @@ class AvailableColorsWidget extends InheritedModel<AvailableColors> {
       return true;
     }
 
-    if (dependencies.contains(AvailableColors.one) && color2 != oldWidget.color2) {
+    if (dependencies.contains(AvailableColors.two) && color2 != oldWidget.color2) {
       return true;
     }
 

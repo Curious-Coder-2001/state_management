@@ -8,7 +8,7 @@
             "name": "full_state",
             "request": "launch",
             "type": "dart",
-            "program": "lib/3.InheritedModel/main.dart"
+            "program": "lib/4.ChangeNotifier/main.dart"
         },
         {
             "name": "full_state (profile mode)",
